@@ -16,19 +16,140 @@
 
 body {
     font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    background-color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* #endregion Commons */
 
 /* #region Utility */
 
+.row {
+    display: flex;
+}
+
+.btn {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-size: 15px;
+}
+
 /* #endregion Utility */
 
 /* #region Main */
 
+#site_main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: var(--secondary-dark);
+    position: relative;
+}
+
+/* #region Overlay */
+
+.overlay {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.overlay.row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+
+.logo {
+    background-color: antiquewhite;
+    height: 80px;
+    width: 10%;
+}
+
+/* Upgrade button */
+.upgrade_button {
+    background-color: brown;
+}
+
+/* #endregion Overlay */
+
+.side_menu {
+    width: 10%;
+    height: calc(100vh - 80px);
+    background-color: var(--primary-dark);
+    padding: 0 1rem;
+}
+
+.playlist_showdown {
+    width: 90%;
+    height: calc(100vh - 80px);
+    background-color: var(--secondary-dark);
+
+}
+
+.menu_container {
+    height: 88%;
+    background-color: aqua;
+    margin-top: 80px;
+}
+
+/* #region Playlist_showdown */
+
+.container_category {
+    justify-content: center;
+    position: relative;
+    top: 80px;
+}
+
+.category_section {
+    padding: 1rem 0;
+    column-gap: 10px;
+}
+
+.category_section>a {
+    color: var(--text-dark);
+    font-weight: 500;
+    padding: 0.5rem;
+}
+
+.active:hover {
+    border-bottom: 2px solid greenyellow;
+}
+
+.all_playlists {
+    overflow-y: scroll;
+    padding: 4rem 1rem 0 1rem;
+}
+
+.measure {
+    background-color: red;
+    height: 150px;
+    width: 100%;
+}
+
+
+
+/* #endregion Playlist_showdown */
+
+
 /* #endregion Main */
 
 /* #region Footer */
+
+#site_footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--commands);
+}
 
 /* #endregion Footer */
 
