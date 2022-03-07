@@ -1,0 +1,37 @@
+:root {
+    --primary-dark: black;
+    --secondary-dark: rgb(2, 2, 70);
+    --commands: rgb(59, 59, 59);
+    --text-light: white;
+    --text-dark: rgb(107, 106, 106);
+}
+
+/* #region Commons */
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* #endregion Commons */
+
+/* #region Utility */
+
+/* #endregion Utility */
+
+/* #region Main */
+
+/* #endregion Main */
+
+/* #region Footer */
+
+/* #endregion Footer */
+
+
+
+
