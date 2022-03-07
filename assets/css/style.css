@@ -18,6 +18,7 @@ body {
     font-family: 'Raleway', sans-serif;
     height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 
 a {
@@ -41,6 +42,10 @@ a {
     font-size: 15px;
 }
 
+.round {
+    border-radius: 50%;
+}
+
 /* #endregion Utility */
 
 /* #region Main */
@@ -50,6 +55,7 @@ a {
     height: calc(100vh - 80px);
     background-color: var(--secondary-dark);
     position: relative;
+    z-index: 1;
 }
 
 /* #region Overlay */
@@ -105,9 +111,12 @@ a {
 /* #region Playlist_showdown */
 
 .container_category {
+    background-color: var(--secondary-dark);
     justify-content: center;
     position: relative;
     top: 80px;
+    position: relative;
+    z-index: 2;
 }
 
 .category_section {
@@ -126,14 +135,26 @@ a {
 }
 
 .all_playlists {
-    overflow-y: scroll;
-    padding: 4rem 1rem 0 1rem;
+    overflow: auto;
+    height: 650px;
+    padding: 4rem 1rem 1rem 1rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 15px;  
 }
 
 .measure {
     background-color: red;
-    height: 150px;
+    height: 250px;
     width: 100%;
+    column-gap: 2%;
+    margin-top: 2rem;
+}
+
+.playlist_cards {
+    height: 100%;
+    width: 15%;
+    background-color: aquamarine;
 }
 
 
@@ -149,6 +170,26 @@ a {
     width: 100%;
     height: 80px;
     background-color: var(--commands);
+    position: relative;
+    bottom: 0;
+    z-index: 5;
+}
+
+.commands_container {
+    justify-content: space-between ;
+    height: 100%;
+}
+
+.commands_left, .commands_right {
+    height: 100%;
+    width: 10%;
+    background-color: cornflowerblue;
+}
+
+.commands_center {
+    width: 60%;
+    height: 100%;
+    background-color: darkorchid;
 }
 
 /* #endregion Footer */
