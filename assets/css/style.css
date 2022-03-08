@@ -29,6 +29,10 @@ img {
     max-width: 100%;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* #endregion Commons */
 
 /* #region Utility */
@@ -65,6 +69,20 @@ img {
     font-size: 30px;
 }
 
+.icon_menu {
+    font-size: 20px;
+    margin-right: 5px;
+    color: var(--text-dark);
+}
+
+.p_left {
+    padding-left: 1rem;
+}
+
+.m_top {
+    margin-top: 1rem;
+}
+
 /* #endregion Utility */
 
 /* #region Main */
@@ -96,10 +114,17 @@ img {
 /* Logo */
 
 .logo {
-    background-color: antiquewhite;
+   /*  background-color: antiquewhite; */
     height: 80px;
     width: 150px;
     margin-left: 1rem;
+}
+
+.logo_image {
+    width: 130px;
+    height: 100%;
+    align-items: center;
+
 }
 
 /* Upgrade button */
@@ -113,19 +138,107 @@ img {
     width: 200px;
     height: calc(100vh - 80px);
     background-color: var(--primary-dark);
-    padding: 0 1rem;
+   /*  padding: 0 1rem; */
 }
+
+.menu_section {
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.menu_section span {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.home {
+    border-left: 2px solid greenyellow;
+}
+
+.home i,
+.home span {
+    color: var(--text-light);
+}
+
+.menu_playlist {
+    position: relative;
+}
+
+.menu_playlist>h4 {
+    color: var(--text-light);
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.add {
+    background-color: var(--text-dark);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.add i {
+    color: var(--primary-dark);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.add_playlist>span {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+.playlist_directory {
+    height: 400px;
+   /*  min-height: 250px; da inserire nelle media query */
+    overflow-y: auto;
+}
+
+.playlist_directory li {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+.playlist_directory a {
+    color: var(--text-dark);
+}
+
+.install_app>a {
+    color: var(--text-dark);
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.install_app>hr {
+    border: 1px solid var(--text-dark);
+    width: 90%;
+}
+
+.user>i, .user>span {
+    font-size: 15px;
+    font-weight: 800;
+    color: var(--text-light);
+}
+
 
 .playlist_showdown {
     width: calc(100% - 200px);
     height: calc(100vh - 80px);
     background-color: var(--secondary-dark);
+    padding-bottom: 4rem;
 
 }
 
 .menu_container {
     height: 100%;
-    background-color: aqua;
+  /*   background-color: aqua; */
     margin-top: 80px;
 }
 
@@ -148,8 +261,10 @@ img {
 
 .category_section>a {
     color: var(--text-dark);
-    font-weight: 500;
+    font-size: 12px;
+    font-weight: 600;
     padding: 0.5rem;
+    text-transform: uppercase;
 }
 
 .active:hover {

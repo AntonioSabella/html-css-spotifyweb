@@ -15,7 +15,12 @@
 
     <main id="site_main">
         <section class="overlay row">
-            <div class="logo"></div>
+            <div class="logo row">
+                <div class="logo_image row">
+                    <img src="./assets/img/logo.svg" alt="logo spotify">
+                </div>
+                <!-- /.logo_image -->
+            </div>
             <!-- /.logo -->
             <div class="upgrade_button">
                 <a class="btn" href="#">Effettua l'upgrade</a>
@@ -26,7 +31,60 @@
         <!-- /.overlay -->
         <div class="row">
             <aside class="side_menu">
-               <div class="menu_container"></div>
+               <div class="menu_container">
+                   <div class="menu_section row">
+                       <div class="home p_left">
+                          <a href="#"><i class="fa-solid fa-house icon_menu"></i> <span>Home</span></a>
+                       </div>
+                       <!-- /.home -->
+                       <div class="search p_left">
+                          <a href="#"><i class="fa fa-search icon_menu" aria-hidden="true"></i> <span>Search</span></a>
+                       </div>
+                       <!-- /.search -->
+                       <div class="library p_left">
+                          <a href="#"><i class="fas fa-swatchbook icon_menu"></i> <span>La tua libreria</span></a>
+                       </div>
+                       <!-- /.library -->
+                   </div>
+                   <!-- /.menu_section -->
+                   <div class="menu_playlist p_left m_top">
+                       <h4>PLAYLIST</h4>
+                       <div class="add_playlist m_top row">
+                           <div class="add">
+                               <a href="#"><i class="far fa-plus"></i></a>
+                           </div>
+                           <!-- /.add -->
+                           <span>Crea Playlist</span>
+                       </div>
+                       <!-- /.add_playlist -->
+                       <div class="playlist_directory">
+                           <ul>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                               <li><a href="#">Nome playlist</a></li>
+                           </ul>
+                       </div>
+                       <!-- /.playlist_directory -->
+                       <div class="install_app">
+                           <a class="row" href="#">
+                            <i class="far fa-arrow-alt-circle-down"></i>
+                            <span>Installa app</span>
+                           </a>
+                           <hr>
+                       </div>
+                       <!-- /.install_app -->
+                       <div class="user m_top">
+                        <i class="fas fa-user-circle"></i>
+                        <span>John Doe</span>
+                       </div>
+                       <!-- /.user -->
+                   </div>
+                   <!-- /.menu_playlist -->
+               </div>
                <!-- /.menu_container -->
             </aside>
             <!-- /.side_menu -->
