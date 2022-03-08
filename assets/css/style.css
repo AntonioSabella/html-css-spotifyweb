@@ -1,6 +1,6 @@
 :root {
     --primary-dark: black;
-    --secondary-dark: rgb(2, 2, 70);
+    --secondary-dark: rgb(6, 6, 48);
     --commands: rgb(59, 59, 59);
     --text-light: white;
     --text-dark: rgb(150, 147, 147);
@@ -47,7 +47,9 @@ ul {
     border: 1px solid white;
     border-radius: 20px;
     padding: 0.5rem 2rem;
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .round {
@@ -127,10 +129,10 @@ ul {
 
 }
 
-/* Upgrade button */
+/* Upgrade button 
 .upgrade_button {
     background-color: brown;
-}
+}*/
 
 /* #endregion Overlay */
 
@@ -280,18 +282,37 @@ ul {
    /*  margin-top: 15px;   */
 }
 
+.all_playlists>h2 {
+    color: var(--text-light);
+}
+
+.all_playlists>p {
+    color: var(--text-dark);
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 .measure {
-    background-color: red;
-    height: 200px;
+   /*  background-color: red; */
+    height: 250px;
     width: 100%;
     column-gap: 2%;
     margin-top: 2rem;
 }
 
 .playlist_cards {
-    height: 100%;
-    width: 15%;
-    background-color: aquamarine;
+    height: 250px;
+    width: 180px;
+  /*   background-color: aquamarine; */
+}
+
+.card_text {
+    color: var(--text-light);
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    font-size: 12px;
 }
 
 
