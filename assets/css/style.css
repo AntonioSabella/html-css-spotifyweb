@@ -105,7 +105,7 @@ ul {
     width: 100%;
     height: calc(100vh - 80px);
     background-color: var(--secondary-dark);
-    position: relative;
+   /*  position: relative; */
 }
 
 /* #region Overlay */
@@ -125,21 +125,7 @@ ul {
     transition: 500ms;
 }
 
-/* Logo */
 
-.logo {
-   /*  background-color: antiquewhite; */
-    height: 80px;
-    width: 150px;
-    margin-left: 1rem;
-}
-
-.logo_image {
-    width: 130px;
-    height: 100%;
-    align-items: center;
-
-}
 
 /* #endregion Overlay */
 
@@ -150,6 +136,35 @@ ul {
     height: calc(100vh - 80px);
     background-color: var(--primary-dark);
 }
+
+/* Logo */
+
+.logo {
+    /*  background-color: antiquewhite; */
+     height: 80px;
+     width: 150px;
+     margin-left: 1rem;
+ }
+ 
+ .logo_image {
+     width: 130px;
+     height: 100%;
+     align-items: center;
+ }
+
+ .logo_small {
+     height: 40px;
+     width: 100px;
+     margin: 0.5rem 0;
+     display: none;
+    }
+
+ .logo_small>i {
+    font-size: 30px;
+ }
+
+/* /Logo */
+
 
 .menu_container {
     height: 100%;
@@ -274,13 +289,12 @@ a.row:hover i, a.row:hover span {
 /* #region Playlist_showdown */
 .playlist_showdown {
     width: calc(100% - 200px);
-    height: calc(100vh - 160px);
+    height: calc(100vh - 80px);
     background-color: var(--secondary-dark);
 
 }
 
 .container_category {
-    background-color: var(--secondary-dark);
     justify-content: center;
 }
 
@@ -308,7 +322,7 @@ a.row:hover i, a.row:hover span {
 
 .all_playlists {
     overflow: auto;
-    height: calc(100% - 80px);
+    height: calc(100% - 140px);
     padding: 0 1rem 1rem 1rem;
 }
 
@@ -324,11 +338,11 @@ a.row:hover i, a.row:hover span {
     margin-top: 10px;
 }
 
-.container_played,
+/* .container_played,
 .container_personal,
 .container_popular {
     width: 100%;
-}
+} */
 
 .measure {
     width: 100%;
@@ -385,7 +399,7 @@ a.row:hover i, a.row:hover span {
 /* #region Footer */
 
 #site_footer {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-color: var(--commands);
     position: fixed;
@@ -570,6 +584,113 @@ a.row:hover i, a.row:hover span {
 
 /* #endregion Footer */
 
+/* #region Media queries */
+
+/* #region media small */
+
+@media screen and (max-width: 568px) {
+
+    .logo {
+        display: none;
+    }
+
+    .logo_small {
+        display: block;
+    }
+
+    .side_menu {
+        width: 50px;
+    }
+
+    .menu_section span {
+        display: none;
+    }
+
+    .home,
+    .search,
+    .library {
+        padding-left: 0.7rem;
+    }
+
+    .playlist_showdown {
+        width: calc(100% - 50px);    
+    }
+
+    .menu_playlist>h4 {
+        display: none;
+    }
+    
+    .add {
+        display: none;
+    }
+    
+    .add_playlist>span {
+        display: none;
+    }
+    
+    
+    .playlist_directory {
+        height: 450px;
+        min-height: 250px;
+        overflow-y: auto;
+    }
+    
+    .playlist_directory li {
+        display: none;
+    }
+    
+    .install_app>a {
+        font-size: 12px;
+        margin-left: 0.2rem;
+    }
+    
+    .install_app span {
+       display: none;
+    }
+    
+    .install_app>hr {
+       display: none;
+    }
+
+    .user>i {
+        font-size: 20px;
+    }
+    
+    .user>span {
+        display: none;
+    }
+
+    .playlist_directory {
+        height: 550px;
+    }
+    
+    .category_section {
+        padding: 1rem;
+        row-gap: 15px;
+        column-gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    .w-24 {
+        width: 24%;
+    }
+
+    .w-40 {
+        width: 40%;
+        justify-content: center;
+    }
+    
+    .category_section>a {
+        font-size: 14px;
+        font-weight: 800;
+        padding: 0;
+        text-transform: uppercase;
+    }
+}
+
+/* #endregion media small */
+
+/* #endregion Media queries */
 
 
 
