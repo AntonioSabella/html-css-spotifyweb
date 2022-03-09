@@ -14,23 +14,15 @@
 <body>
 
     <main id="site_main">
-        <section class="overlay row">
-            <div class="logo row">
-                <div class="logo_image row">
-                    <img src="./assets/img/logo.svg" alt="logo spotify">
-                </div>
-                <!-- /.logo_image -->
-            </div>
-            <!-- /.logo -->
-            <div class="upgrade_button">
-                <a class="btn" href="#">Effettua l'upgrade</a>
-            </div>
-            <!-- /.upgrade_button -->
-
-        </section>
-        <!-- /.overlay -->
         <div class="row">
             <aside class="side_menu">
+                <div class="logo row">
+                    <div class="logo_image row">
+                        <img src="./assets/img/logo.svg" alt="logo spotify">
+                    </div>
+                    <!-- /.logo_image -->
+                </div>
+                <!-- /.logo -->
                <div class="menu_container">
                    <div class="menu_section row">
                        <div class="home p_left">
@@ -59,13 +51,13 @@
                        <!-- /.add_playlist -->
                        <div class="playlist_directory">
                            <ul>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
-                               <li><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
+                               <li class="name"><a href="#">Nome playlist</a></li>
                            </ul>
                        </div>
                        <!-- /.playlist_directory -->
@@ -89,9 +81,16 @@
             </aside>
             <!-- /.side_menu -->
             <section class="playlist_showdown">
+                <section class="overlay row">
+                    <div class="upgrade_button enlarge">
+                        <a class="btn" href="#">Effettua l'upgrade</a>
+                    </div>
+                    <!-- /.upgrade_button -->
+                </section>
+                <!-- /.overlay -->
                 <div class="container_category row">
                     <div class="category_section row">
-                        <a class="active" href="#">In Evidenza</a>
+                        <a class="active under_green" href="#">In Evidenza</a>
                         <a class="active" href="#">Podcast</a>
                         <a class="active" href="#">Classifiche</a>
                         <a class="active" href="#">Generi e Mood</a>
@@ -102,140 +101,159 @@
                 </div>
                 <!-- /.container_category -->
                 <div class="all_playlists">
-                    <h2>Recently played</h2>
-                    <div class="recently_played measure row">
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/metal_lifting.jpg" alt="">
+                    <div class="container_played">
+                        <h2>Recently played</h2>
+                        <div class="recently_played measure wrap row">
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/metal_lifting.jpg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/stranger.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_text -->
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/aquietplace.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
+                            </div>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/split.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
+                            </div>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/cure.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
+                            </div>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/sinister.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
+                            </div>
+                            <!-- /.playlist_cards -->
                         </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/stranger.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/aquietplace.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/split.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/cure.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/sinister.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
+                        <!-- /.recently_played -->
                     </div>
-                    <!-- /.recently_played -->
-                    <h2>Created for Jhon Doe</h2>
-                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="personal_playlist measure row">
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/radar.jpeg" alt="">
+                    <!-- /.container_played -->
+                    <div class="container_personal">
+                        <h2>Created for Jhon Doe</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        <div class="personal_playlist measure wrap row">
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/radar.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img src="./assets/img/mixdaily.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_text -->
+                            <!-- /.playlist_cards -->
                         </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img src="./assets/img/mixdaily.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
+                        <!-- /.personal_playlist -->
                     </div>
-                    <!-- /.personal_playlist -->
-                    <h2>Popular artists</h2>
-                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
-                    <div class="popular_artists measure row">
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img class="round" src="./assets/img/youg.jpeg" alt="">
+                    <!-- /.container_created -->
+                    <div class="container_popular">
+                        <h2>Popular artists</h2>
+                        <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                        <div class="popular_artists measure wrap row">
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img class="round" src="./assets/img/youg.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
+                            <!-- /.playlist_cards -->
+                            <div class="playlist_cards">
+                                <div class="card_image">
+                                    <img class="round" src="./assets/img/einaudi.jpeg" alt="">
+                                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+                                </div>
+                                <!-- /.card_image -->
+                                <div class="card_text row">
+                                    <h3>Heavy metal</h3>
+                                    <p>Subtitle</p>
+                                </div>
+                                <!-- /.card_text -->
                             </div>
-                            <!-- /.card_text -->
+                            <!-- /.playlist_cards -->
                         </div>
-                        <!-- /.playlist_cards -->
-                        <div class="playlist_cards">
-                            <div class="card_image">
-                                <img class="round" src="./assets/img/einaudi.jpeg" alt="">
-                            </div>
-                            <!-- /.card_image -->
-                            <div class="card_text row">
-                                <h3>Heavy metal</h3>
-                                <p>Subtitle</p>
-                            </div>
-                            <!-- /.card_text -->
-                        </div>
-                        <!-- /.playlist_cards -->
+                        <!-- /.popular_artists -->
                     </div>
-                    <!-- /.popular_artists -->
+                    <!-- /.container_popular -->
                 </div>
                 <!-- /.all_playlists -->
 
@@ -260,8 +278,8 @@
                 </div>
                 <!-- /.command_specify -->
                 <div class="command_interactions">
-                    <i class="fa-regular fa-heart icon_light"></i>
-                    <i class="fa-regular fa-folder-open icon_light"></i>
+                    <a class="heart" href="#"><i class="fa-regular fa-heart icon_light"></i></a>
+                    <a class="folder" href="#"><i class="fa-regular fa-folder-open icon_light"></i></a>
                 </div>
                 <!-- /.command_interactions -->
             </div>
@@ -270,16 +288,21 @@
                 <div class="command_player row">
                     <a href="#"><i class="fas fa-random player_icon"></i></a>
                     <a href="#"><i class="fas fa-step-backward player_icon"></i></a>
-                    <a href="#"><i class="far fa-play-circle player_icon icon_large"></i></a>
+                    <a href="#"><i class="far fa-play-circle player_icon icon_large enlarge"></i></a>
                     <a href="#"><i class="fas fa-step-forward player_icon"></i></a>
                     <a href="#"><i class="fas fa-redo-alt player_icon"></i></a>
                  </div>
                 <!-- /.command_player -->
                 <div class="player_bar row">
                     <span>0:25</span>
-                    <div class="dark_bar">
-                        <div class="light_bar"></div>
-                    </div>
+                    <div class="bars">
+                        <div class="dark_bar">
+                            <div class="light_bar"></div>
+                            <div class="green_bar">
+                                <div class="round_audio"></div>
+                            </div>
+                        </div>
+                    </div>    
                     <span>4:35</span>
                 </div>
                 <!-- /.player_bar -->
@@ -287,14 +310,17 @@
             <!-- /.commands_center -->
             <div class="commands_right row">
                 <div class="icon_box">
-                    <i class="fas fa-list icon_light"></i>
-                    <i class="fas fa-desktop icon_light"></i>
+                    <i class="fas fa-list icon_white"></i>
+                    <i class="fas fa-desktop icon_white"></i>
                 </div>
                 <!-- /.icon_box -->
                 <div class="audio_bar row">
-                    <i class="fas fa-volume-up icon_light"></i>
+                    <i class="fas fa-volume-up icon_white"></i>
                     <div class="dark_audio">
                         <div class="light_audio"></div>
+                        <div class="green_audio">
+                            <div class="round_circle"></div>
+                        </div>
                     </div>
                 </div>
                 <!-- /.audio_bar -->
