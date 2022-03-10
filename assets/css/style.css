@@ -705,6 +705,23 @@ a.row:hover i, a.row:hover span {
         
     }
 
+    .card_image>i {
+        font-size: 30px;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        transform: translate(-50%, -50%);
+        color: var(--text-light);
+        display:none;
+    }
+    
+    .card_image:hover img {
+        filter: brightness(0.5);
+    }
+    .card_image:hover i {
+        display: block;
+    }
+
     .commands_center {
         width: 40%;
     }
@@ -881,6 +898,23 @@ a.row:hover i, a.row:hover span {
 
     .category_section>a {
         font-size: 10px;
+    }
+
+    .card_image>i {
+        font-size: 50px;
+        position: absolute;
+        top: 110px;
+        left: 110px;
+        transform: translate(-50%, -50%);
+        color: var(--text-light);
+        display:none;
+    }
+    
+    .card_image:hover img {
+        filter: brightness(0.5);
+    }
+    .card_image:hover i {
+        display: block;
     }
 
     .w-25 {
