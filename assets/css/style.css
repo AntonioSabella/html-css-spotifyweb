@@ -689,10 +689,16 @@ a.row:hover i, a.row:hover span {
         height: 420px;
         min-height: 150px;
         overflow-y: auto;
+        flex-grow: 2.2;
     }
 
     .playlist_showdown {
         width: calc(100% - 200px);    
+    }
+
+    .resize {
+        height: 15px;
+        left: 33%;
     }
 
     .playlist_cards {
@@ -862,7 +868,8 @@ a.row:hover i, a.row:hover span {
     .personal_playlist, 
     .popular_artists {
         flex-wrap: wrap;
-        row-gap: 0;
+        justify-content: center;
+        row-gap: 3rem;
     }
 
     .side_menu {
@@ -873,21 +880,20 @@ a.row:hover i, a.row:hover span {
         height: 420px;
         min-height: 150px;
         overflow-y: auto;
+        flex-grow: 2.2;
     }
 
     .playlist_showdown {
         width: calc(100% - 50px);    
     }
 
-    .playlist_cards {
-        width: 220px;
+    .resize {
+        height: 10px;
+        left: 32%;
     }
 
-    .recently_played,
-    .personal_playlist,
-    .popular_artists {
-        justify-content: center;
-        row-gap: 2rem;
+    .playlist_cards {
+        width: 220px;
     }
 
     .container_played,
